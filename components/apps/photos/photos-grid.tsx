@@ -84,7 +84,7 @@ export function PhotosGrid({
   const [isPositioned, setIsPositioned] = useState(false);
   const [isInfoOpen, setIsInfoOpen] = useState(false);
   const [isShareOpen, setIsShareOpen] = useState(false);
-  const prevPhotosRef = useRef<Photo[]>();
+  const prevPhotosRef = useRef<Photo[]>(undefined);
 
   const selectedPhoto = useMemo(
     () => photos.find((photo) => photo.id === selectedInGridId) ?? null,

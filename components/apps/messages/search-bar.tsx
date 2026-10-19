@@ -3,7 +3,7 @@ import { Icons } from "./icons";
 import { useWindowFocus } from "@/lib/window-focus-context";
 
 interface SearchBarProps {
-  inputRef: RefObject<HTMLInputElement>;
+  inputRef: RefObject<HTMLInputElement | null>;
   value: string;
   onChange: (value: string) => void;
 }

@@ -15,7 +15,7 @@ interface MessageListProps {
   conversationId: string | null;
   onReaction?: (messageId: string, reaction: Reaction) => void;
   onReactionComplete?: () => void;
-  messageInputRef?: React.RefObject<{ focus: () => void }>;
+  messageInputRef?: React.RefObject<{ focus: () => void } | null>;
   isMobileView?: boolean;
   focusModeActive?: boolean;
   isWindowFocused?: boolean;

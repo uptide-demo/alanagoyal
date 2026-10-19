@@ -7,7 +7,7 @@ import Note from "../note";
 import { Icons } from "../icons";
 
 interface NotesMobilePresenterProps {
-  containerRef: RefObject<HTMLDivElement>;
+  containerRef: RefObject<HTMLDivElement | null>;
   handleBackToSidebar: () => void;
   handleNoteCreated: (note: NoteType) => void;
   handleNoteSelect: (note: NoteType) => Promise<void>;

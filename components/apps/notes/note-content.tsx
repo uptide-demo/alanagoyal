@@ -54,7 +54,7 @@ function getTaskText(node: React.ReactNode): string {
     return node.map(getTaskText).join("");
   }
 
-  if (!React.isValidElement(node)) {
+  if (!React.isValidElement<{ href?: string; children?: React.ReactNode }>(node)) {
     return "";
   }
 
