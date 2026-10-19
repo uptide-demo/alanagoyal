@@ -18,7 +18,7 @@ interface EventSearchProps {
   currentDate: Date;
   onSelect: (event: CalendarEvent) => void;
   isMobile?: boolean;
-  inputRef?: RefObject<HTMLInputElement>;
+  inputRef?: RefObject<HTMLInputElement | null>;
 }
 
 export function EventSearch({

@@ -23,7 +23,7 @@ interface FinderNavProps {
   searchQuery: string;
   showViewDropdown: boolean;
   viewMode: FinderViewMode;
-  searchInputRef: RefObject<HTMLInputElement>;
+  searchInputRef: RefObject<HTMLInputElement | null>;
   onToggleViewDropdown: () => void;
   onCloseViewDropdown: () => void;
   onSetViewMode: (mode: FinderViewMode) => void;

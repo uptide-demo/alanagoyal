@@ -3,7 +3,7 @@ import { Icons } from "./icons";
 import { useWindowFocus } from "@/lib/window-focus-context";
 
 interface SearchBarProps {
-  inputRef: RefObject<HTMLInputElement>;
+  inputRef: RefObject<HTMLInputElement | null>;
   searchQuery: string;
   setSearchQuery: (query: string) => void;
   setHighlightedIndex: Dispatch<SetStateAction<number>>;

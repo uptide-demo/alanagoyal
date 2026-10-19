@@ -11,7 +11,7 @@ import { setUrl } from "@/lib/set-url";
 type WindowFocusValue = ReturnType<typeof useWindowFocus>;
 
 interface NotesDesktopPresenterProps {
-  containerRef: RefObject<HTMLDivElement>;
+  containerRef: RefObject<HTMLDivElement | null>;
   handleNoteCreated: (note: NoteType) => void;
   handleNoteSelect: (note: NoteType) => Promise<void>;
   initialSlug?: string;
